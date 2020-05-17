@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Poiret+One&family=Source+Sans+Pro&family=VT323&display=swap');
+
+
+
+*{
+  box-sizing: border-box;
+}
+
+header{
+  color: #e22c2c;
+  font-size: 2rem;
+  padding-top: 2rem;
+  font-family: 'VT323', monospace;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+  
+  /* Style the side navigation */
+  .grid_container {
+      display: grid;
+      grid-template-areas: 
+      'header'
+      'main'
+      'main'
+      'main'
+      'footer';
+  }
+
+  .title_dec{
+    width: 150px;
+    border: #d8d8d8;
+    border-bottom-style: solid;
+    border-bottom-width: 7px;
+    padding-top: 4rem;
+    margin-left: 2rem;
+  }
+
+  .about_me_title{
+    padding-left: 2rem;
+    font-size: 4rem;
+    margin-top: auto;
+  }
+
+  .date{
+    font-size: 125%;
+    font-family: 'Dosis', sans-serif;
+    color: #d8d8d8;
+  }
+  
+  article{
+    margin-right: 20%;
+    text-align: justify;
+    line-height: 200%;
+    border-top: #d8d8d8;
+    border-top-style: solid;
+    border-top-width: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+    }
+
+
+  nav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ee2737;
+    overflow-x: hidden;
+    padding-top: 90px;
+    line-height: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  /* Side navigation links */
+  nav a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Poiret One', cursive;
+    font-size: 64px;
+    font-weight: bold;
+  }
+  
+  /* Change color on hover */
+  nav a:hover {
+    background-color: #d8d8d8;
+    color:rgb(100, 13, 13);
+  }
+  
+  /* Style the content */
+  main {
+    grid-area: main;
+    margin-left: 200px;
+    padding-left: 20px;
+  }
+
+  /*style the footer*/
+  footer {
+      height: 100px;
+      width: 100%;
+      grid-area: footer;
+      text-align: center;
+      background-color: rgb(71, 63, 63);
+      padding-bottom: 0;
+      margin-bottom: 0;
+      
+  }
+
+  footer p {
+      color: white;
+  }
+
+  small{
+    font-size: 36px;
+  }
