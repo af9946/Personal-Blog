@@ -13,71 +13,13 @@ header{
   font-family: 'VT323', monospace;
 }
 
-  body {
+body {
   font-family: 'Source Sans Pro', sans-serif;
   margin-bottom: 0;
   margin-right: 0;
-  }
+}
   
   /* Style the side navigation */
-  .grid_container {
-      display: grid;
-      grid-gap: 40px;
-      grid-template-columns: repeat(2,1fr);
-  }
-
-  .card{
-    display: grid;
-    grid-template-columns: 35px 20px 1fr;
-    border-bottom-style: solid;
-    border-color: #d8d8d8;
-    border-bottom-width: 1px;
-    padding-bottom: 50px;
-    margin-top: 30px;
-  }
-
-  .type{
-    grid-column: 1;
-    grid-row: 1/3;
-    color: #2e3438;
-
-  }
-
-   .type span{
-    writing-mode: vertical-rl;
-    text-align: right;
-    font-weight: bolder;
-  }
-
-  .card h3{
-    grid-column: 3/4;
-    grid-row: 1;
-    font-size: 36px;
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-
-  .card_date{
-    grid-column: 3/4;
-    grid-row: 2;
-    font-size: 20px;
-    color: #2e3438;
-  }
-
-  .read_more{
-    grid-column: 3/4;
-    grid-row: 3;
-    padding-top: 20px;
-  }
-
-  .read_more a{
-    text-decoration: none;
-    color: #e22c2c;
-    text-align: right;
-    letter-spacing: 2px;
-    font-weight: bolder;
-
-  }
 
   .title_dec{
     width: 150px;
@@ -88,12 +30,71 @@ header{
     margin-left: 2rem;
   }
 
-  .title{
+  .sample_title{
     padding-left: 2rem;
     font-size: 4rem;
     margin-top: auto;
   }
 
+  .detail{
+    display: grid;
+    grid-template-columns: 100px 20px 1fr;
+  }
+
+  .author_photo{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    position: relative;
+    text-align: center;
+  }
+
+  .author_photo img{
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-color:cadetblue;
+    border-style: solid;
+    margin:auto;
+    padding:0;
+  }
+
+  .author_name{
+    grid-column: 3/4;
+    grid-row: 1;
+    font-size: 20px;
+    margin: 0;
+    color: darkcyan;
+  }
+
+  .author_description{
+    grid-column: 3/4;
+    grid-row: 2;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .date{
+    grid-column: 1/4;
+    grid-row: 3;
+    font-size: 20px;
+    margin:20px;
+    color: #63666a;
+    letter-spacing: 2px;
+    font-family: 'Dosis', sans-serif;
+  }
+
+  
+  article{
+    text-align: justify;
+    line-height: 200%;
+    border-top: #d8d8d8;
+    border-top-style: solid;
+    border-top-width: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 50px;
+    font-size: 20px;
+    }
 
 
   nav {
