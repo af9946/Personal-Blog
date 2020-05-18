@@ -18,8 +18,7 @@ header{
   margin-bottom: 0;
   margin-right: 0;
   }
-  
-  /* Style the side navigation */
+
   .flex_container {
     display: flex;
     flex-wrap:wrap;
@@ -71,7 +70,6 @@ header{
   }
   
   
-  /* Side navigation links */
   nav a {
     color: white;
     padding: 20px;
@@ -79,23 +77,20 @@ header{
     display: block;
     font-family: 'Poiret One', cursive;
     font-size: 64px;
-    font-weight: bold;
+    font-weight: 1000;
   }
   
-  /* Change color on hover */
   nav a:hover {
-    background-color: #d8d8d8;
-    color:rgb(100, 13, 13);
+    background-color: white;
+    color:#ee2737;
   }
   
-  /* Style the content */
   main {
     margin-right: 70px;
     margin-left: 270px;
     padding-bottom: 100px;
   }
 
-  /*style the footer*/
   footer {
       height: 100px;
       width: 100%;
@@ -106,8 +101,29 @@ header{
       
   }
 
-  footer p {
-      color: white;
+
+  .socials-nav{
+    float: right;
+    padding-top: 20px;
+    padding-right: 50px;
+  }
+
+  .fa{
+    font-size: 100px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    display: table-cell;
+    color: white;
+    padding:10px;
+    width: 72px;
+    height: 72px;
+    background-position: center;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      color: #ee2737;
   }
 
   small{
