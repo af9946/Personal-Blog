@@ -20,24 +20,87 @@ header{
   }
   
   /* Style the side navigation */
-  .flex_container {
-    display: flex;
-    flex-wrap:wrap;
+  .grid_container {
+    display: grid;
     padding: 5px;
+    width: 500px;
+    background-color: #f8f8f8;
+    padding-left: 20px;
+    padding-bottom: 40px;
   }
 
-  .column{
-    flex-direction:column;
-    flex: 30%;
-    padding-left: 10px;
+  .info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
   }
 
-  .column img{
+  input[type=text]{
+    height: 40px;
+    width: 400px;
     margin-top: 10px;
+    font-size: 20px;
+    border:none;
+    border-bottom-style: solid;
+    border-width: 1px;
+    background-color: #f8f8f8;
+    border-color: #d8d8d8;
+  }
+
+  label{
+    font-size: 16px;
+    color: #ee2737;
+    font-weight: 700;
+  }
+
+  .submit_button{
+    margin-top: 40px;
+    right: 0;
+    float: right;
+    margin-right: 70px;
+  }
+
+  button{
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color:#ee2737;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 40px;
     vertical-align: middle;
   }
-
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
   
+  button span:after {
+    content: '>>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -40px;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    padding-right: 40px;
+  }
+  
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
 
   .title_dec{
     width: 150px;
@@ -112,18 +175,4 @@ header{
 
   small{
     font-size: 36px;
-  }
-
-  @media (max-width: 800px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-
-  @media (max-width: 1000px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
   }
