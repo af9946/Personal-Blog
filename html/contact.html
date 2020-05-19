@@ -5,19 +5,23 @@
     <meta charset="utf-8" />
     <title>Who's blog</title>
     <meta name="description" context="Example" />
-    <link rel="stylesheet" type="text/css" href="../css/contact.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 </head>
 
 <body>
-    <nav>
-        <div class="l_side_bar_list">
-            <a href="index.html">A<small>bout</small></a>
-            <a href="article.html">A<small>rticle</small></a>
-            <a href="gallary.html">G<small>allary</small></a>
-            <a href="contact.html">C<small>ontact</small></a>
-        </div>
-    </nav>
-
+    <div class="nav_bar">
+        <ur>
+            <li><a href="../index.html">A<small>bout</small></a></li>
+            <li><a href="article.html">A<small>rticle</small></a></li>
+            <li><a href="gallary.html">G<small>allary</small></a></li>
+            <li><a href="contact.html">C<small>ontact</small></a></li>
+        </ur>
+    </div>
+    
     <main>
         <header>>> WHO'S BLOG</header>
         <div class="article_title">
@@ -25,32 +29,33 @@
             <h1 class="title">Contact</h1>
         </div>
 
-        <div class="grid_container">
+        <div class="info_container">
             <form>
                 <div class="personal imfo">
                     <div class="info">
-                        <label>First Name</label>
-                        <input type="text">
+                        <label class="input_label">First Name</label>
+                        <input type="text" class="info_input">
                     </div>
 
                     <div class="info">
-                        <label>Last Name</label>
-                        <input type="text">
+                        <label class="input_label">Last Name</label>
+                        <input type="text" class="info_input">
                     </div>
 
                     <div class="info">
-                        <label>Email Address</label>
-                        <input type="text">
+                        <label class="input_label">Email Address</label>
+                        <input type="text" class="info_input">
                     </div>
 
                     <div class="info">
-                        <label>Phone Number</label>
-                        <input type="text">
+                        <label class="input_label">Phone Number</label>
+                        <input type="text" class="info_input">
                     </div>
                 </div>
 
                 <div class="submit_button">
-                    <button type="button" onclick="alert('Thanks! I will contact you as soon as possible:)')"><span>Submit</span></button>
+                    <button type="button"
+                        onclick="alert('Thanks! I will contact you as soon as possible:)')"><span>Submit</span></button>
                 </div>
             </form>
 
@@ -58,7 +63,12 @@
 
     </main>
     <footer>
-
+        <div class="socials-nav">
+            <a href="https://github.com/af9946"><i class="fa fa-github fa-2x"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x"></i></a>
+            <a href="https://twitter.com/explore"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x"></i></a>
+        </div>
     </footer>
 
 </body>

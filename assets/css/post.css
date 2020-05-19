@@ -1,0 +1,94 @@
+
+
+  .sample_title{
+    padding-left: 2rem;
+    font-size: 4rem;
+    margin-top: auto;
+  }
+
+  .detail{
+    display: grid;
+    grid-template-columns: 100px 20px 1fr;
+  }
+
+  .author_photo{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    position: relative;
+    text-align: center;
+  }
+
+  .author_photo img{
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-color:cadetblue;
+    border-style: solid;
+    margin:auto;
+    padding:0;
+  }
+
+  .author_name{
+    grid-column: 3/4;
+    grid-row: 1;
+    font-size: 20px;
+    margin: 0;
+    color: darkcyan;
+  }
+
+  .author_description{
+    grid-column: 3/4;
+    grid-row: 2;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .date{
+    grid-column: 1/4;
+    grid-row: 3;
+    font-size: 20px;
+    margin:20px;
+    color: #63666a;
+    letter-spacing: 2px;
+    font-family: 'Dosis', sans-serif;
+  }
+
+.reference{
+  color: darkgray; 
+  border-color: firebrick; 
+  border-left-style: solid; 
+  border-left-width: 5px; 
+  padding-left: 12px;
+  font-style: italic;
+}
+.in_text_pic{
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+  display: block;
+  height: auto;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.in_text_pic figcaption{
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+  margin: 4px;
+}
+
+.in_text_pic img{
+  max-width: 100%;
+  margin-top: 2px;
+
+}
+
+strong{
+  color: darkred;
+}
